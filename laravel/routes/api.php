@@ -12,9 +12,9 @@ Route::get('/user', function (Request $request) {
 Route::controller(CategoryController::class)->prefix('categories')->group(function() {
 
     Route::get('/', 'getCategories');
-    Route::post('/', 'createCatagory');
+    Route::post('/', 'createCategory');
     Route::get('/{categoryId}', 'getCategory');
-    Route::patch('/{categoryId}', 'updateCategoy');
+    Route::patch('/{categoryId}', 'updateCategory');
     Route::delete('/{categoryId}', 'deleteCategory');
 
 });
